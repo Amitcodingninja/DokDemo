@@ -1,0 +1,33 @@
+Here is the list of extracted commands:
+
+1. `wsl --install`
+2. `wsl --install -d Ubuntu`
+3. `sudo apt update`
+4. `sudo apt install docker.io -y`
+5. `sudo systemctl start docker`
+6. `sudo systemctl enable docker`
+7. `wsl -l -v`
+8. `wsl -d Ubuntu`
+9. `docker --version`
+10. `sudo docker run hello-world`
+11. `docker run -it ubuntu bash`
+12. `apt list --upgradable`
+13. `cd /mnt/c/Users/ACER/Downloads/DockerDemo/DockerDemo`
+
+These are the key commands from your provided text.
+ Let me know if you need further clarification or usage
+  instructions for any specific command.
+
+Here is the list of commands from your provided text:
+
+1. `docker images`
+2. `sudo docker images`
+3. `ls`
+4. `docker build -t springapi .`
+5. `sudo docker build -t springapi .`
+6. `sudo docker images`
+7. `sudo docker run -p 8000:8080 springapi`
+
+These commands cover checking images, building Docker images,
+listing files, and running a Spring Boot application inside
+Docker. Let me know if you'd like further explanations!
