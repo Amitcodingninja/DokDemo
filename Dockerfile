@@ -1,11 +1,15 @@
+# OpenJDK 17 base image
 FROM openjdk:17
-ARG JAR_FILE=target/*.jar
-# JAR file ko copy kar rahe hain
-COPY target/demo-app.jar  /usr/app
 
-# Working directory set kar rahe hain
+# Work directory set kar rahe hain
 WORKDIR /usr/app
 
+# JAR file ko copy kar rahe hain
+ARG JAR_FILE=target/*.jar
+COPY ${JAR_FILE} app.jar
+
+# Port expose kar rahe hain
 EXPOSE 8000
-# ENTRYPOINT
-ENTRYPOINT ["java", "-jar", "/app.jar"]
+
+# ENTRYPOINT set kar rahe hain
+ENTRYPOINT ["java", "-jar", "app.jar"]
