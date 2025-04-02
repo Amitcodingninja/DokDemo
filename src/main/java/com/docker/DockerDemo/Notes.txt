@@ -31,3 +31,55 @@ Here is the list of commands from your provided text:
 These commands cover checking images, building Docker images,
 listing files, and running a Spring Boot application inside
 Docker. Let me know if you'd like further explanations!
+
+
+
+for Running in AWS CLI 
+
+
+1 intellij to Github 
+2. EC2 launch in gitbash and install docker there by 
+sudo yum update -y 
+sudo yum install docker -y
+sudo service docker start
+sudo usermod -aG docker ec2-user
+exit
+
+3. Install git 
+sudo yum install git -y 
+git version 
+where is git 
+
+4. Install Maven 
+ sudo yum install maven -y
+ 
+ 5 . git clone 
+ 
+ git clone https://github.com/Amitcodingninja/DokDemo.git
+ ls
+ 
+6 . cd DokDemo and ls -l 
+mvn clean package
+  cd ..
+ come in root folder ([ec2-user@ip-172-31-12-72 DokDemo]$
+)
+
+
+7. create account on dockerhub 
+docker build -t amitit073/test:testing-v1 .
+➡️ Correct from dockerfile 3/3
+check image by : docker images
+
+8. run the docker 
+docker run  -d -p 8080:8000 amitit073/test:testing-v1
+
+docker ps : it will show container is running 
+
+9. Go to security groups and edit enbound group 
+
+10 . replace your localhost by ip (EC2)
+
+11. docker login and push in docker hub 
+
+docker push amitit073/test:testing-v1
+
